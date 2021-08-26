@@ -1,0 +1,111 @@
+body {
+    background-color: black;
+}
+
+main {
+    width: 450px;
+    border: 1px solid orange;
+    margin: 0 auto;
+}
+
+main h2 {
+    color: orange;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    /* background-color: orange; */
+}
+
+#logo {
+    width: 100%;
+}
+
+#logoImg {
+    width: 155px;
+    height: 140px;
+    position: relative;
+    left: 150px;
+    margin-bottom: 10px;
+    animation: rot 2s;
+}
+
+@keyframes rot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(720deg);
+    }
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5,
+#btn6 {
+    width: 120px;
+    height: 120px;
+    background-color: orange;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#btn1 h2,
+#btn2 h2,
+#btn3 h2,
+#btn4 h2,
+#btn5 h2,
+#btn6 h2 {
+    margin: 0px;
+    padding-top: 40px;
+    color: black;
+}
+
+main button {
+    background-color: orange;
+    border: none;
+    width: 120px;
+    height: 49px;
+    margin-left: calc(50% - 60px);
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+form {
+    display: block;
+}
+
+form p {
+    color: orange;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+form input {
+    width: 90%;
+    height: 40px;
+    background-color: black;
+    border: 1px solid orange;
+    margin-left: 20px;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+form input::placeholder {
+    color: orange;
+    opacity: 0.6;
+    font-size: 18px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
